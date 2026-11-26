@@ -1,1 +1,39 @@
+from tkinter import *
 
+ventana = Tk()
+
+ventana.title('Ventana de MOUSA')
+
+ventana.config(bg='black')
+
+ventana.iconbitmap('icono.ico')
+
+
+superior = Frame(ventana, width=700, height=700, bg='white', bd=3, relief='raised', cursor='hand2')
+superior.place(x=15, y=15)
+
+izquierda = Frame(ventana, width=300, height=300, bg='white', bd=4, relief='sunken', cursor='hand2')
+izquierda.place(x=15, y=150)
+
+
+derecha = Frame(ventana, width=300, height=300, bg='white', bd=2, relief='sunken', cursor='hand2')
+derecha.place(x=335, y=150)
+
+
+Label(superior, text='Ventana de MOUSA', bg='white', fg='black', font=('Arial', 17, 'bold')).place(x=20, y=20)
+
+Label(superior, text='CUATRO COLORES!', bg='black', fg='white', font=('Arial', 11)).place(x=20, y=65)
+
+
+Label(izquierda, text='Amarillo', bg='yellow', fg='black', font=('Arial', 13, 'bold')).place(x=40, y=20)
+
+Label(izquierda, text= 'Rojo', bg='red', fg='black', font=('Arial', 13, 'bold')).place(x=60, y=200)
+
+
+Label(derecha, text='Verde', bg='green', fg='black', font=('Arial', 13, 'bold')).place(x=50, y=20)
+
+Label(derecha, text='Azul', bg='blue', fg='black', font=('Arial', 13, 'bold')).place(x=60, y=200)
+
+
+
+ventana.mainloop()
